@@ -1,0 +1,21 @@
+@import '_config.scss';
+
+.home {
+    $self: &;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    &__welcome-text {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    &__name-mark {
+        color: $primary-color;
+    }
+
+    &__title-text {
+        animation: blink 1s linear infinite;
+    }
+}

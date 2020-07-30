@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import '../scss/App.scss';
 import Footer from './Footer';
 import Navigation from './Navigation';
-import Page from './Page';
+import Main from './Main';
 
 class App extends Component {
   state = {}
@@ -15,7 +15,7 @@ class App extends Component {
             {<Navigation />}
           </header>
           <main>
-            {<Page />}
+            {<Main />}
           </main>
           <footer>
             <Footer />
