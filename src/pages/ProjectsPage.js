@@ -10,13 +10,13 @@ const projectsArray = [
 
 const ProjectsPage = () => {
   const projects = projectsArray.map(project => (
-    <div className="projects__project" key={project.name}>
+    <div className='projects__project' key={project.name}>
       <img className='projects__project-image' src={project.image} alt={project.alt} />
-      <div className="projects__project-links">
-        <a className='projects__project_link' href="#"><span>Live</span></a>
-        <a className='projects__project_link' href="#"><span>Code</span></a>
+      <div className='projects__project-links'>
+        <a className='projects__project_link' href='#'><span>Live</span></a>
+        <a className='projects__project_link' href='#'><span>Code</span></a>
       </div>
-      <div className="projects__project-info">
+      <div className='projects__project-info'>
         <p>{project.text}</p>
       </div>
     </div>
@@ -24,6 +24,7 @@ const ProjectsPage = () => {
 
   return (
     <div className='main projects'>
+      <h2 className='projects__title'>Projects</h2>
       <div className='projects__projects-container'>
         {projects}
       </div>

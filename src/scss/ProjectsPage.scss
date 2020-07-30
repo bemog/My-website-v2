@@ -5,6 +5,10 @@
     padding-top: 60px;
     overflow-x: hidden;
 
+    &__title {
+        font-size: 1.8em;
+    }
+
     &__projects-container {
         margin-top: 20px;
         display: grid;
