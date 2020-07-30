@@ -1,9 +1,11 @@
 import React from 'react';
 
 const ProjectsPage = () => {
-    return (
-        <div></div>
-    )
+  return (
+    <div>
+      ProjectsPage
+    </div>
+  )
 }
 
 export default ProjectsPage;
