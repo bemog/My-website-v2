@@ -43,13 +43,11 @@
             }
 
             &-error {
+                display: block;
+                height: 20px;
                 color: red;
-                opacity: 0;
+                opacity: 1;
                 font-size: .7em;
-
-                &.show {
-                    opacity: 1;
-                }
             }
         }
 

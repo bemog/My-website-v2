@@ -24,7 +24,7 @@
             align-items: center;
             border: 1px solid rgba(255, 255, 255, 0.4);
             border-radius: 10px;
-            // transform: translateX(-150%);
+            transform: translateX(-150%);
             animation: slide 1.5s forwards;
     
             &:nth-child(2) {
@@ -56,6 +56,31 @@
                 border-top-left-radius: 10px;
                 border-bottom-left-radius: 10px;
             }
+        }
+    }
+
+    @keyframes blink {
+        0% {
+            border-right: 2px solid transparent;
+        }
+    
+        50% {
+            border-right: 2px solid white;
+        }
+    
+        100% {
+            border-right: 2px solid transparent;
+        }
+    }
+    
+    
+    @keyframes slide {
+        0% {
+            transform: translateX(-150%);
+        }
+    
+        100% {
+            transform: translateX(0);
         }
     }
 }

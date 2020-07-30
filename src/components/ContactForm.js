@@ -1,22 +1,44 @@
 import React from 'react';
 
-const ContactForm = () => {
+const ContactForm = (props) => {
     return (
-        <form className='contact__form' id='contact-form'>
+        <form className='contact__form' id='contact-form' onSubmit={props.submitted}>
             <div className='contact__form-section'>
                 <label className='contact__form-section-label' htmlFor='name'>Name</label>
-                <input className='contact__form-section-input' type='text' name='name' id='name' placeholder='Enter your name...' maxLength='50' />
-                <small className='contact__form-section-error' id='name-error'>Please enter your name</small>
+                <input
+                    className='contact__form-section-input'
+                    type='text'
+                    name='name'
+                    id='name'
+                    placeholder='Enter your name...'
+                    maxLength='50'
+                    onChange={props.changed}
+                    value={props.state.name} />
+                <small className='contact__form-section-error' id='name-error'>{props.state.nameErrorMessage}</small>
             </div>
             <div className='contact__form-section'>
                 <label className='contact__form-section-label' htmlFor='email'>E-mail</label>
-                <input className='contact__form-section-input' type='text' name='email' id='email' placeholder='Enter your email address...' />
-                <small className='contact__form-section-error' id='email-error'>Please enter your e-mail address</small>
+                <input
+                    className='contact__form-section-input'
+                    type='text'
+                    name='email'
+                    id='email'
+                    placeholder='Enter your email address...'
+                    onChange={props.changed}
+                    value={props.state.email} />
+                <small className='contact__form-section-error' id='email-error'>{props.state.emailErrorMessage}</small>
             </div>
             <div className='contact__form-section'>
                 <label className='contact__form-section-label' htmlFor='text'>Message</label>
-                <textarea className='contact__form-section-text' name='text' id='text' placeholder='Enter your message...'></textarea>
-                <small className='contact__form-section-error' id='text-error'>Please enter your message</small>
+                <textarea
+                    className='contact__form-section-text'
+                    name='text'
+                    id='text'
+                    placeholder='Enter your message...'
+                    onChange={props.changed}
+                    value={props.state.text} >
+                </textarea>
+                <small className='contact__form-section-error' id='text-error'>{props.state.textErrorMessage}</small>
             </div>
             <button className='contact__form-submit-btn' type='submit'>Submit</button>
         </form>
