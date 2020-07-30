@@ -2,7 +2,6 @@
 
 .home {
     $self: &;
-    overflow: hidden;
     display: flex;
     align-items: center;
 
@@ -16,6 +15,17 @@
     }
 
     &__title-text {
-        animation: blink 1s linear infinite;
+        display: block;
+        transform: translateX(-150%);
+        animation: slide 1s forwards;
+        animation-delay: .5s;
+    }
+
+    &__title-text-end {
+        display: block;
+        color: $primary-color;
+        transform: translateX(-150%);
+        animation: slide 1s forwards;
+        animation-delay: 1.5s;
     }
 }

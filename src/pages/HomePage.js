@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../scss/HomePage.scss';
 
-const HomePage = () => {
-  return (
-    <div className='main home'>
-      <h1 className='home__welcome-text'>
-        Welcome,
+class HomePage extends Component {
+  state = {
+    titleText: ''
+  }
+
+  render() {
+    return (
+      <div className='main home'>
+        <h1 className='home__welcome-text'>
+          Welcome,
         <br />
         I am <span className='home__name-mark'>Bartek Mogielnicki</span>,
         <br />
-        <span className='home__title-text'></span>
-      </h1>
-    </div>
-  )
+          <span className='home__title-text'>former mechanical constructor,</span>
+          <span className='home__title-text-end'>future web developer.</span>
+        </h1>
+      </div>
+    );
+  }
 }
 
 export default HomePage;
