@@ -1,0 +1,109 @@
+@import '_config.scss';
+
+.navigation {
+    $self: &;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        margin-left: 10px;
+        font-size: 2.5rem;
+        z-index: 100;
+        transition: .3s;
+    }
+
+    &__menu-btn {
+        $self: &;
+        height: 30px;
+        width: 30px;
+        margin: 15px 20px 0 0;
+        z-index: 10;
+        cursor: pointer;
+        transition: .3s;
+
+        &--close {
+            transform: translateY($nav-height) rotate(180deg);
+        }
+
+        &--close .navigation__menu-btn-line:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 11px)
+        }
+
+        &--close .navigation__menu-btn-line:nth-child(2) {
+            display: none;
+        }
+
+        &--close .navigation__menu-btn-line:nth-child(3) {
+            transform: rotate(-45deg) translate(-4px, 1px);
+        }
+    }
+    
+    &__menu-btn-line {
+        height: 4px;
+        width: 100%;
+        margin-top: 5px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    &__items-list-container {
+        $self: &;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: $nav-height;
+        background-color: #070604;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        transform: translateY(-100%);
+        transition: .3s;
+        z-index: 99;
+
+        &--show {
+            transform: translateY(0);
+        }
+    }
+
+    &__items-list {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 800px;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__item {
+        $self:&;
+
+        &:hover i {
+            color: rgba(255, 255, 255, .5);
+        }
+
+        &:hover .navigation__item-title {
+            opacity: 1;
+        }
+    }
+
+    &__item-link {
+        position: relative;
+        font-size: 1.7rem;
+        transition: .3s ease-out;
+    }
+
+    &__item-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1rem;
+        opacity: 0;
+    }
+
+    &__logo-mark {
+        color: $primary-color;
+    }
+}
+
