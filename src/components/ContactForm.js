@@ -5,7 +5,7 @@ const ContactForm = () => {
         <form className='contact__form' id='contact-form'>
             <div className='contact__form-section'>
                 <label className='contact__form-section-label' htmlFor='name'>Name</label>
-                <input className='contact__form-section-input' type='text' name='name' id='name' placeholder='Enter your name...' maxlength='50' />
+                <input className='contact__form-section-input' type='text' name='name' id='name' placeholder='Enter your name...' maxLength='50' />
                 <small className='contact__form-section-error' id='name-error'>Please enter your name</small>
             </div>
             <div className='contact__form-section'>

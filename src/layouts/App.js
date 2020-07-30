@@ -6,13 +6,24 @@ import Main from './Main';
 import '../scss/App.scss';
 
 class App extends Component {
-  state = {}
+  state = {
+    showMenu: 'false',
+  }
+
+  handleShowMenu = () => {
+    this.setState({
+      showMenu: !this.state.showMenu,
+    })
+  }
+
   render() {
     return (
       <Router>
         <>
           <header>
-            {<Navigation />}
+            {<Navigation
+              showMenu={this.state.showMenu}
+              clicked={this.handleShowMenu} />}
           </header>
           <main>
             {<Main />}

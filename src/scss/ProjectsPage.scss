@@ -31,7 +31,7 @@
                 animation-delay: .5s;
             }
     
-            .projects__project-info {
+            .projects__project-links {
                 height: 100%;
                 padding-left: 10px;
                 padding-right: 10px;
@@ -42,7 +42,6 @@
             }
 
             .projects__project_link {
-                margin-left: 5px;
                 transition: .3s;
     
                 &:hover {
