@@ -1,15 +1,27 @@
 import React, { Component } from 'react';
-import '../styles/App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import '../scss/App.scss';
 import Footer from './Footer';
 import Navigation from './Navigation';
+import Page from './Page';
 
 class App extends Component {
   state = {}
   render() {
     return (
-      <div>
-        Test
-      </div>
+      <Router>
+        <>
+          <header>
+            {<Navigation />}
+          </header>
+          <main>
+            {<Page />}
+          </main>
+          <footer>
+            <Footer />
+          </footer>
+        </>
+      </Router>
     );
   }
 }

@@ -1,0 +1,23 @@
+@import 'config';
+@import 'utility';
+
+body {
+    min-height: 100vh;
+    background-image: url(../images/background.jpg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: $main-font;
+    position: relative;
+
+    &::after {
+        content: "";
+        background-color: rgba(0, 0, 0, .4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -5;
+    }
+}
