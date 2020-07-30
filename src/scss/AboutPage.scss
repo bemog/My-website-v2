@@ -1,1 +1,33 @@
-@import '_config.scss'
+@import '_config.scss';
+
+.about {
+    $self: &;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+    overflow-x: hidden;
+
+    &__experience-container {
+        $self:&;
+
+        .about__experience-item-title {
+            margin-bottom: 10px;
+        }
+    }
+    
+    &__skills-container {
+        overflow: hidden;
+
+        .about__skills-list {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .about__skills-item-logo {
+                width: 75px;
+            }
+        }
+    }
+}
