@@ -1,0 +1,157 @@
+@import '_config.scss';
+
+@include mediaSmall {
+
+    .main {
+        $self:&;
+        margin-top: 30px;
+        min-height: calc(100vh - #{$foot-height} - 28px - #{$nav-height});
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        div {
+            margin-top: 20px;
+        }
+
+        .about {
+            margin-top: 30px;
+
+            &__experience-item {
+                font-size: 1rem;
+                text-align: justify;
+            }
+
+            &__skills-container {
+                .about__skills-list {
+                    margin-top: 10px;
+                    margin-bottom: 40px;
+    
+                    .about__skills-item {
+                        .about__skills-item-logo {
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .projects {
+            $self:&;
+            &__projects-container {
+                margin-bottom: 20px;
+
+                .projects__project {
+                    margin: 0 auto;
+                    width: 90%;
+                    display: block;
+                    text-align: center;
+                    padding-bottom: 20px;
+
+                    .projects__project-image {
+                        width: 100%;
+                        border-top-right-radius: 10px;
+                        border-bottom-left-radius: 0;
+                    }
+
+                    .projects__project-info {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .home__welcome-text {
+        font-size: 1.6rem;
+    }
+}
+
+@include mediaSmallFooter {
+
+    .main {
+        .contact {
+            padding-top: 40px;
+
+            &__form {
+                width: 90%;
+                max-width: 500px;
+            }
+
+            &__info {
+                margin-top: 70px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                span,
+                div {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@include mediaMedium {
+
+    .navigation {
+        &__items-list-container {
+            transform: translateY(0);
+        }
+
+        &__items-list {
+            max-width: 500px;
+        }
+
+        &__menu-btn {
+            display: none;
+        }
+    }
+}
+
+@include mediaBig {
+
+    .home {
+        margin-left: 40px;
+    }
+}
+
+@include mediaLarge {
+
+    body::after {
+        background-color: rgba(0, 0, 0, .2);
+    }
+
+    .main {
+        margin-left: 100px;
+    }
+
+    .home__welcome-text {
+        font-size: 3rem;
+    }
+
+    .navigation {
+        &__items-list-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: 0 auto;
+            width: 85px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__items-list {
+            flex-direction: column;
+            height: 60%;
+        }
+    }
+}

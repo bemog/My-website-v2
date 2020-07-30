@@ -1,5 +1,5 @@
-@import 'config';
-@import 'utility';
+@import '_config.scss';
+@import '_utility.scss';
 
 body {
     min-height: 100vh;
@@ -21,3 +21,5 @@ body {
         z-index: -5;
     }
 }
+
+@import '_mobile.scss';

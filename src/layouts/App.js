@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import '../scss/App.scss';
 import Footer from './Footer';
 import Navigation from './Navigation';
 import Main from './Main';
+import '../scss/App.scss';
 
 class App extends Component {
   state = {}

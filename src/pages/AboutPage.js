@@ -32,7 +32,6 @@ const AboutPage = () => {
           <Skills />
         </ul>
       </div>
-
     </div>
   )
 }
