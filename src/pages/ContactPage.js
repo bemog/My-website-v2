@@ -52,17 +52,10 @@ class ContactPage extends Component {
 
     // Submit form
     if (name && email && text) {
-      // Clear all inputs
-      this.setState({
-        name: '',
-        email: '',
-        text: '',
-        nameErrorMessage: '',
-        emailErrorMessage: '',
-        textErrorMessage: ''
-      })
       return true;
-    } return false;
+    } else {
+      return false;
+    }
   }
 
   handleFormSubmit = (e) => {
