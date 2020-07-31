@@ -7,18 +7,18 @@ import logoSass from '../images/logos/sass_logo.png';
 import logoReact from '../images/logos/react_logo.png';
 
 const skillsArr = [
-    { name: 'Html', src: logoHtml, alt: 'HTML logo' },
-    { name: 'Css', src: logoCss, alt: 'CSS logo' },
-    { name: 'Js', src: logoJs, alt: 'JS logo' },
-    { name: 'React', src: logoReact, alt: 'REACT logo' },
-    { name: 'Npm', src: logoNpm, alt: 'NPM logo' },
-    { name: 'Sass', src: logoSass, alt: 'SASS logo' },
+    { name: 'Html', img: logoHtml, alt: 'HTML logo' },
+    { name: 'Css', img: logoCss, alt: 'CSS logo' },
+    { name: 'Js', img: logoJs, alt: 'JS logo' },
+    { name: 'React', img: logoReact, alt: 'REACT logo' },
+    { name: 'Npm', img: logoNpm, alt: 'NPM logo' },
+    { name: 'Sass', img: logoSass, alt: 'SASS logo' },
 ]
 
 const Skills = () => {
     const skills = skillsArr.map(skill => (
         <li className='about__skills-item' key={skill.name}>
-            <img className='about__skills-item-logo' src={skill.src} alt={skill.alt} />
+            <img className='about__skills-item-logo' src={skill.img} alt={skill.alt} />
         </li>
     ))
     return (

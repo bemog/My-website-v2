@@ -12,7 +12,11 @@ const links = [
 const Navigation = (props) => {
   const item = links.map(link => (
     <li className='navigation__item' key={link.name}>
-      <NavLink className='navigation__item-link' to={link.path} exact={link.exact ? link.exact : false}>
+      <NavLink 
+        className='navigation__item-link' 
+        to={link.path} 
+        exact={link.exact ? 
+        link.exact : false}>
         <span>
           <i className={link.icon}></i>
           <span className='navigation__item-title'>{link.name}</span>

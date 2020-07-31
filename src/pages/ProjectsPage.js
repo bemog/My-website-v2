@@ -4,8 +4,19 @@ import project1 from '../images/projects/project1.jpg';
 import project2 from '../images/projects/project22.jpg';
 
 const projectsArray = [
-  { name: 'Project1', image: project1, alt: 'Project1 screenshot', title: 'My personal portfolio website', text: 'Used technologies: SCSS, REACT.JS, BEM, NETLIFY', codeLink: 'https://github.com/BartlomiejMogielnicki/My-website-v2' },
-  { name: 'Project2', image: project2, alt: 'Project2 screenshot', title: 'Dog shelter website', text: 'Used technologies: SCSS, REACT.JS, BEM, NETLIFY' },
+  { name: 'Project1',
+    image: project1, 
+    alt: 'Project1 screenshot', 
+    title: 'My personal portfolio website', 
+    technologies: 'SCSS, REACT.JS, BEM, NETLIFY', 
+    codeLink: 'https://github.com/BartlomiejMogielnicki/My-website-v2' 
+  },
+  { name: 'Project2', 
+    image: project2, 
+    alt: 'Project2 screenshot', 
+    title: 'Dog shelter website - beta ver.', 
+    technologies: 'SCSS, REACT.JS, BEM, GITHUB PAGES' 
+  },
 ];
 
 const ProjectsPage = () => {
@@ -18,7 +29,8 @@ const ProjectsPage = () => {
       </div>
       <div className='projects__project-info'>
         <strong className='projects__project-info-title'>{project.title}</strong>
-        <p>{project.text}</p>
+        <p>Used technologies:</p>
+        <p>{project.technologies}</p>
       </div>
     </div>
   ))

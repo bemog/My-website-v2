@@ -19,11 +19,8 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <>
           <header>
-            {<Navigation
-              showMenu={this.state.showMenu}
-              clicked={this.handleShowMenu} />}
+            {<Navigation showMenu={this.state.showMenu} clicked={this.handleShowMenu} />}
           </header>
           <main>
             {<Main />}
@@ -31,7 +28,6 @@ class App extends Component {
           <footer>
             <Footer />
           </footer>
-        </>
       </Router>
     );
   }
