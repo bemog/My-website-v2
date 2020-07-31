@@ -52,7 +52,6 @@ class ContactPage extends Component {
 
     // Submit form
     if (name && email && text) {
-      console.log('submitted!')
       // Clear all inputs
       this.setState({
         name: '',
@@ -62,12 +61,14 @@ class ContactPage extends Component {
         emailErrorMessage: '',
         textErrorMessage: ''
       })
-    }
+      return true;
+    } return false;
   }
 
   handleFormSubmit = (e) => {
-    e.preventDefault();
-    this.validateForm();
+    if (!this.validateForm()) {
+      e.preventDefault();
+    }
   }
 
   handleChange = (e) => {
