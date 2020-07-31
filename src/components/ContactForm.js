@@ -2,7 +2,16 @@ import React from 'react';
 
 const ContactForm = (props) => {
     return (
-        <form className='contact__form' id='contact-form' onSubmit={props.submitted}>
+        <form
+            className='contact__form'
+            id='contact-form'
+            onSubmit={props.submitted}
+            method='POST'
+            netlify-honeypot='bot-field'
+            data-netlify='true'>
+            <p class="hidden" hidden>
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
             <div className='contact__form-section'>
                 <label className='contact__form-section-label' htmlFor='name'>Name</label>
                 <input
