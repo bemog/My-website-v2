@@ -13,8 +13,8 @@ const ProjectsPage = () => {
     <div className='projects__project' key={project.name}>
       <img className='projects__project-image' src={project.image} alt={project.alt} />
       <div className='projects__project-links'>
-        <a className='projects__project_link' href='#' target='_blank'><span>Live</span></a>
-        <a className='projects__project_link' href={project.codeLink} target='_blank'><span>Code</span></a>
+        <a className='projects__project-link' href='#' target='_blank' rel='noopener noreferrer'><span>Live</span></a>
+        <a className='projects__project-link' href={project.codeLink} target='_blank' rel='noopener noreferrer'><span>Code</span></a>
       </div>
       <div className='projects__project-info'>
         <strong className='projects__project-info-title'>{project.title}</strong>

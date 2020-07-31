@@ -11,17 +11,17 @@
 
     &__form {
         margin: 30px auto;
-        display: flex;
-        flex-direction: column;
         height: 400px;
         width: 500px;
+        display: flex;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
 
         &-section {
+            margin-top: 10px;
             width: 100%;
             font-size: 1.3em;
-            margin-top: 10px;
 
             &-label {
                 display: block;
@@ -37,8 +37,8 @@
             }
 
             &-text {
-                resize: vertical;
                 height: 100px;
+                resize: vertical;
                 font-family: $main-font;
             }
 
@@ -46,36 +46,36 @@
                 display: block;
                 height: 20px;
                 color: red;
-                opacity: 1;
                 font-size: .7em;
+                opacity: 1;
             }
         }
 
         &-submit-btn {
             margin-top: 20px;
-            background-color: $primary-color;
             width: 150px;
+            background-color: $primary-color;
             font-size: 1rem;
         }
     }
 
     &__info {
         margin-top: 180px;
+        margin-bottom: 15px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         color: #ddd;
-        margin-bottom: 15px;
 
         &-icon {
+            margin-right: 5px;
             font-size: 1.5rem;
             vertical-align: text-bottom;
-            margin-right: 5px;
         }
 
         &-social-link {
-            font-size: 1.5rem;
             margin-left: 10px;
+            font-size: 1.5rem;
         }
     }
 }

@@ -12,7 +12,7 @@ class HomePage extends Component {
         <h1 className='home__welcome-text'>
           Welcome,
         <br />
-        I am <span className='home__name-mark'>Bartek Mogielnicki</span>,
+        I am <span className='home__name mark'>Bartek Mogielnicki</span>,
         <br />
           <span className='home__title-text'>former mechanical constructor,</span>
           <span className='home__title-text-end'>future web developer.</span>

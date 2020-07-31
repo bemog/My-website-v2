@@ -92,10 +92,10 @@ class ContactPage extends Component {
           <span><i className='contact__info-icon fas fa-phone'></i> 509-190-959</span>
           <span><i className='contact__info-icon fas fa-envelope'></i> b.mogielnicki@gmail.com</span>
           <div className='contact__info-social'>
-            <a href='https://www.linkedin.com/in/bartlomiej-mogielnicki/' target='_blank'>
+            <a href='https://www.linkedin.com/in/bartlomiej-mogielnicki/' target='_blank' rel='noopener noreferrer'>
               <span><i className='contact__info-social-link fab fa-linkedin-in'></i></span>
             </a>
-            <a href='https://github.com/BartlomiejMogielnicki' target='_blank'>
+            <a href='https://github.com/BartlomiejMogielnicki' target='_blank' rel='noopener noreferrer'>
               <span><i className='contact__info-social-link fab fa-github'></i></span>
             </a>
           </div>

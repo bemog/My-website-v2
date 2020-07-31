@@ -7,8 +7,8 @@
 
     &__logo {
         margin-left: 10px;
-        font-size: 2.5rem;
         z-index: 100;
+        font-size: 2.5rem;
         transition: .3s;
     }
 
@@ -20,8 +20,8 @@
         top: 15px;
         right: 15px;
         z-index: 10;
-        cursor: pointer;
         transition: .3s;
+        cursor: pointer;
 
         &--close {
             transform: translateY($nav-height) rotate(180deg);
@@ -38,29 +38,29 @@
         &--close .navigation__menu-btn-line:nth-child(3) {
             transform: rotate(-45deg) translate(-4px, 1px);
         }
+
+        &-line {
+            margin-top: 5px;
+            height: 4px;
+            width: 100%;
+            border-radius: 2px;
+            background-color: white;
+        }
     }
     
-    &__menu-btn-line {
-        height: 4px;
-        width: 100%;
-        margin-top: 5px;
-        background-color: white;
-        border-radius: 2px;
-    }
-
     &__items-list-container {
         $self: &;
+        margin: 0 auto;
         position: fixed;
         top: 0;
         left: 0;
-        margin: 0 auto;
-        width: 100%;
+        z-index: 99;
         height: $nav-height;
+        width: 100%;
         background-color: #070604;
         border-right: 1px solid rgba(255, 255, 255, 0.1);
         transform: translateY(-100%);
         transition: .3s;
-        z-index: 99;
 
         &--show {
             transform: translateY(0);
@@ -79,7 +79,6 @@
 
     &__item {
         $self:&;
-
         &:hover i {
             color: rgba(255, 255, 255, .5);
         }
@@ -102,10 +101,6 @@
         transform: translate(-50%, -50%);
         font-size: 1rem;
         opacity: 0;
-    }
-
-    &__logo-mark {
-        color: $primary-color;
     }
 }
 

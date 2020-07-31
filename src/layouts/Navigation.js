@@ -38,7 +38,7 @@ const Navigation = (props) => {
   return (
     <div className='navigation'>
       <div className={logoClasses}>
-        <span className='navigation__logo-mark'>BM</span>
+        <span className='navigation__logo mark'>BM</span>
       </div>
       <div className={menuBtnClasses} onClick={props.clicked}>
         <div className='navigation__menu-btn-line'></div>
