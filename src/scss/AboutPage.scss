@@ -6,7 +6,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     font-size: 1.2em;
-    overflow-x: hidden;
 
     &__experience-title {
         border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -14,6 +13,20 @@
 
     &__experience-container {
         $self:&;
+        transform: translateX(-150%);
+        animation: slide 1.2s forwards;
+
+        &:nth-of-type(2) {
+            animation-delay: .4s;
+        }
+
+        &:nth-of-type(3) {
+            animation-delay: .8s;
+        }
+
+        &:nth-of-type(4) {
+            animation-delay: 1.2s;
+        }
 
         .about__experience-item-title {
             margin-bottom: 10px;
