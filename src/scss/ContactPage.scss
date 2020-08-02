@@ -3,6 +3,8 @@
 .contact {
     $self: &;
     padding-top: 60px;
+    opacity: 0;
+    animation: showContact 1s forwards;
 
     &__title {
         font-size: 1.8em;
@@ -77,5 +79,15 @@
             margin-left: 10px;
             font-size: 1.5rem;
         }
+    }
+}
+
+@keyframes showContact {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
