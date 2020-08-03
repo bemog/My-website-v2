@@ -19,15 +19,15 @@ class App extends Component {
   render() {
     return (
       <Router>
-          <header>
-            {<Navigation showMenu={this.state.showMenu} clicked={this.handleShowMenu} />}
-          </header>
-          <main>
-            {<Main />}
-          </main>
-          <footer>
-            <Footer />
-          </footer>
+        <header>
+          {<Navigation showMenu={this.state.showMenu} clicked={this.handleShowMenu} />}
+        </header>
+        <main>
+          {<Main />}
+        </main>
+        <footer>
+          <Footer />
+        </footer>
       </Router>
     );
   }

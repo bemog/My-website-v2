@@ -12,11 +12,11 @@ const links = [
 const Navigation = (props) => {
   const item = links.map(link => (
     <li className='navigation__item' key={link.name}>
-      <NavLink 
-        className='navigation__item-link' 
-        to={link.path} 
-        exact={link.exact ? 
-        link.exact : false}>
+      <NavLink
+        className='navigation__item-link'
+        to={link.path}
+        exact={link.exact ?
+          link.exact : false}>
         <span>
           <i className={link.icon}></i>
           <span className='navigation__item-title'>{link.name}</span>
@@ -29,7 +29,7 @@ const Navigation = (props) => {
   let navigationClasses = [];
   let menuBtnClasses = [];
   let logoClasses = [];
-  if (props.showMenu) {
+  if (!props.showMenu) {
     navigationClasses = ['navigation__items-list-container navigation__items-list-container--show'];
     menuBtnClasses = ['navigation__menu-btn navigation__menu-btn--close'];
     logoClasses = ['navigation__logo navigation__logo--move'];
