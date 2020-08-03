@@ -9,7 +9,7 @@ const projectsArray = [
     image: project1,
     alt: 'Project1 screenshot',
     title: 'My personal portfolio website',
-    technologies: 'SCSS, REACT.JS, BEM, NETLIFY',
+    technologies: 'REACT.JS, SCSS, BEM, NETLIFY',
     codeLink: 'https://github.com/BartlomiejMogielnicki/My-website-v2',
     link: 'https://www.bmogielnicki.pl/'
   },
@@ -17,9 +17,10 @@ const projectsArray = [
     name: 'Project2',
     image: project2,
     alt: 'Project2 screenshot',
-    title: 'Dog shelter website - beta ver.',
-    technologies: 'SCSS, REACT.JS, BEM, NETLIFY',
-    codeLink: 'https://github.com/BartlomiejMogielnicki/website-dog-shelter-v2'
+    title: 'Dog shelter website',
+    technologies: 'REACT.JS, SCSS, BEM, NETLIFY',
+    codeLink: 'https://github.com/BartlomiejMogielnicki/website-dog-shelter-v2',
+    link: 'https://bmogielnicki-dog-shelter-website.netlify.app/'
   },
 ];
 
