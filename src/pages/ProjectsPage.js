@@ -1,7 +1,8 @@
 import React from "react";
 import "../scss/ProjectsPage.scss";
 import project1 from "../images/projects/project1.jpg";
-import project2 from "../images/projects/project22.jpg";
+import project2 from "../images/projects/project2.jpg";
+import project3 from "../images/projects/project3.jpg";
 
 const projectsArray = [
   {
@@ -21,6 +22,15 @@ const projectsArray = [
     technologies: "REACT, SCSS, BEM, NETLIFY",
     codeLink: "https://github.com/BartlomiejMogielnicki/website-dog-shelter-v2",
     link: "https://bmogielnicki-dog-shelter-website.netlify.app/",
+  },
+  {
+    name: "Project3",
+    image: project3,
+    alt: "Project3 screenshot",
+    title: "Blackjack card game",
+    technologies: "JAVASCRIPT, SCSS, BEM, WEBPACK, BABEL, NETLIFY",
+    codeLink: "https://github.com/BartlomiejMogielnicki/blackjack-game",
+    link: "https://bmogielnicki-blackjack-game.netlify.app/",
   },
 ];
 
