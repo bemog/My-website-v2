@@ -1,37 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 $nav-height: 50px;
-$foot-height : 40px;
-$primary-color: #04C6FE;
-$main-font: 'Roboto', sans-serif;
-
+$foot-height: 40px;
+$primary-color: #04c6fe;
+$main-font: "Roboto", sans-serif;
 
 @mixin mediaSmall {
-    @media screen and (max-width: 550px) {
-        @content;
-    }
+  @media screen and (max-width: 550px) {
+    @content;
+  }
 }
 
 @mixin mediaSmallFooter {
-    @media screen and (max-width: 768px) {
-        @content;
-    }
+  @media screen and (max-width: 768px) {
+    @content;
+  }
 }
 
 @mixin mediaMedium {
-    @media screen and (min-width: 551px) {
-        @content;
-    }
+  @media screen and (min-width: 551px) {
+    @content;
+  }
 }
 
 @mixin mediaBig {
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
-        @content;
-    }
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
 }
 
 @mixin mediaLarge {
-    @media screen and (min-width: 1025px) {
-        @content;
-    }
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
 }
