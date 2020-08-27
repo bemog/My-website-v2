@@ -28,7 +28,8 @@ const projectsArray = [
     image: project3,
     alt: "Project3 screenshot",
     title: "Blackjack card game",
-    technologies: "JAVASCRIPT, SCSS, BEM, WEBPACK, BABEL, NETLIFY",
+    technologies:
+      "JAVASCRIPT, SCSS, BEM, WEBPACK, BABEL, DECKOFCARDS API, NETLIFY",
     codeLink: "https://github.com/BartlomiejMogielnicki/blackjack-game",
     link: "https://bmogielnicki-blackjack-game.netlify.app/",
   },
@@ -65,7 +66,7 @@ const ProjectsPage = () => {
           {project.title}
         </strong>
         <p>Used technologies:</p>
-        <p>{project.technologies}</p>
+        <p className="projects__project-info-tech">{project.technologies}</p>
       </div>
     </div>
   ));
