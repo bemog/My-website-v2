@@ -1,37 +1,38 @@
-import React from "react";
-import "../scss/ProjectsPage.scss";
-import project1 from "../images/projects/project1.jpg";
-import project2 from "../images/projects/project2.jpg";
-import project3 from "../images/projects/project3.jpg";
+import React from 'react';
+import '../scss/ProjectsPage.scss';
+import project1 from '../images/projects/project1.jpg';
+import project2 from '../images/projects/project2.jpg';
+import project3 from '../images/projects/project3.jpg';
 
 const projectsArray = [
   {
-    name: "Project1",
+    name: 'Project1',
     image: project1,
-    alt: "Project1 screenshot",
-    title: "My personal portfolio website",
-    technologies: "REACT, SCSS, BEM, NETLIFY",
-    codeLink: "https://github.com/BartlomiejMogielnicki/My-website-v2",
-    link: "https://www.bmogielnicki.pl/",
-  },
-  {
-    name: "Project2",
-    image: project2,
-    alt: "Project2 screenshot",
-    title: "Dog shelter website",
-    technologies: "REACT, SCSS, BEM, NETLIFY",
-    codeLink: "https://github.com/BartlomiejMogielnicki/website-dog-shelter-v2",
-    link: "https://bmogielnicki-dog-shelter-website.netlify.app/",
-  },
-  {
-    name: "Project3",
-    image: project3,
-    alt: "Project3 screenshot",
-    title: "Blackjack card game",
+    alt: 'Project1 screenshot',
+    title: 'Flashcards application',
     technologies:
-      "JAVASCRIPT, SCSS, BEM, WEBPACK, BABEL, DECKOFCARDS API, NETLIFY",
-    codeLink: "https://github.com/BartlomiejMogielnicki/blackjack-game",
-    link: "https://bmogielnicki-blackjack-game.netlify.app/",
+      'REACT, STYLED COMPONENTS, ESLINT, PRETTIER, HUSKY, LOCAL STORAGE, NETLIFY',
+    codeLink: 'https://github.com/BartlomiejMogielnicki/flashcards-app',
+    link: 'https://flashcards-app.netlify.app/',
+  },
+  {
+    name: 'Project2',
+    image: project2,
+    alt: 'Project2 screenshot',
+    title: 'Dog shelter website',
+    technologies: 'REACT, SCSS, BEM, NETLIFY',
+    codeLink: 'https://github.com/BartlomiejMogielnicki/website-dog-shelter-v2',
+    link: 'https://bmogielnicki-dog-shelter-website.netlify.app/',
+  },
+  {
+    name: 'Project3',
+    image: project3,
+    alt: 'Project3 screenshot',
+    title: 'Blackjack card game',
+    technologies:
+      'JAVASCRIPT, SCSS, BEM, WEBPACK, BABEL, DECKOFCARDS API, NETLIFY',
+    codeLink: 'https://github.com/BartlomiejMogielnicki/blackjack-game',
+    link: 'https://bmogielnicki-blackjack-game.netlify.app/',
   },
 ];
 

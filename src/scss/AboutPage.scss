@@ -1,4 +1,4 @@
-@import "_config.scss";
+@import '_config.scss';
 
 .about {
   $self: &;
@@ -20,7 +20,6 @@
     &__experience-title {
       border-bottom: 1px solid rgba(255, 255, 255, 0.4);
       transform: translateX(-150%);
-      animation: slide 1.2s forwards;
     }
   }
 
