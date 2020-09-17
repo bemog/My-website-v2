@@ -13,16 +13,16 @@ const skillsArr = [
 ];
 
 const minorSkillsArr = [
-  'CSS Modules',
-  'Styled Components',
-  'REST API',
-  'Redux',
-  'BEM',
-  'Sass/Scss',
-  'Git/Github',
   'Npm',
   'Bootstrap',
   'ESLint',
+  'REST API',
+  'Redux',
+  'Git/Github',
+  'BEM',
+  'Sass/Scss',
+  'CSS Modules',
+  'Styled Components',
 ];
 
 const Skills = ({ minor }) => {

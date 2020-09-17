@@ -43,9 +43,14 @@ const AboutPage = () => {
         <ul className="about__skills-list">
           <Skills />
         </ul>
-        <ul className="about__skills-minor-list">
-          <Skills minor />
-        </ul>
+        <div className="about__skills-minor-list-container">
+          <ul className="about__skills-minor-list">
+            <Skills minor />
+          </ul>
+          <ul className="about__skills-minor-list--second">
+            <Skills minor />
+          </ul>
+        </div>
       </div>
     </div>
   );
