@@ -18,7 +18,7 @@ class HomePage extends Component {
             former mechanical constructor,
           </span>
           <span className="home__title-text-end">
-            future Front-End Developer.
+            future front-end developer.
           </span>
         </h1>
       </div>

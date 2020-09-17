@@ -22,7 +22,7 @@ const projectsArray = [
     title: 'Dog shelter website',
     technologies: 'REACT, SCSS, BEM, NETLIFY',
     codeLink: 'https://github.com/BartlomiejMogielnicki/website-dog-shelter-v2',
-    link: 'https://bmogielnicki-dog-shelter-website.netlify.app/',
+    link: 'https://dog-shelter-website.netlify.app/',
   },
   {
     name: 'Project3',
