@@ -40,3 +40,9 @@ $main-font: "Roboto", sans-serif;
     @content;
   }
 }
+
+@mixin mediaSmallLandscape {
+  @media screen and (max-height: 600px) {
+    @content;
+  }
+}
