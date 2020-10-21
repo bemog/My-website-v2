@@ -17,6 +17,12 @@ $main-font: "Roboto", sans-serif;
   }
 }
 
+@mixin mediaSmallProjects {
+   @media screen and (min-width: 551px) and (max-width: 675px) {
+    @content;
+  }
+}
+
 @mixin mediaMedium {
   @media screen and (min-width: 551px) {
     @content;

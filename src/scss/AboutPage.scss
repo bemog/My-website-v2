@@ -69,21 +69,22 @@
       }
 
       .about__skills-item-logo {
-        width: 75px;
+        height: 75px;
       }
     }
 
     .about__skills-minor-list-container {
       margin-top: 30px;
+      margin-bottom: 10px;
       position: relative;
       text-align: center;
       .about__skills-minor-list {
-        width: 1000px;
+        width: 1200px;
         position: absolute;
         display: flex;
         justify-content: space-evenly;
-        transform: translateX(-1000px);
-        animation: skillsSlide 13s linear infinite;
+        transform: translateX(-1200px);
+        animation: skillsSlide 15s linear infinite;
         animation-delay: 1s;
         .about__skills-minor-item {
           font-size: 1rem;
@@ -91,12 +92,12 @@
       }
 
       .about__skills-minor-list--second {
-        width: 1000px;
+        width: 1200px;
         display: flex;
         justify-content: space-evenly;
-        transform: translateX(-1000px);
-        animation: skillsSlide 13s linear infinite;
-        animation-delay: 7.5s;
+        transform: translateX(-1200px);
+        animation: skillsSlide 15s linear infinite;
+        animation-delay: 8.5s;
 
         .about__skills-minor-item {
           font-size: 1rem;
@@ -108,11 +109,11 @@
 
 @keyframes skillsSlide {
   0% {
-    transform: translateX(-1000px);
+    transform: translateX(-1200px);
   }
 
   100% {
-    transform: translateX(1000px);
+    transform: translateX(1200px);
   }
 }
 

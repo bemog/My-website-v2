@@ -75,10 +75,16 @@
       &-info-title {
         display: block;
         margin-bottom: 10px;
+        letter-spacing: 1px;
+      }
+
+       &-info-subtitle {
+        margin-bottom: 8px;
       }
 
       &-info-tech {
         font-size: 0.9rem;
+        line-height: 1.5;
       }
     }
   }

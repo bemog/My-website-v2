@@ -9,30 +9,30 @@ const projectsArray = [
     name: 'Project1',
     image: project1,
     alt: 'Project1 screenshot',
-    title: 'Flashcards application',
+    title: 'FLASHCARDS APPLICATION',
     technologies:
-      'REACT, STYLED COMPONENTS, ESLINT, PRETTIER, HUSKY, LOCAL STORAGE, NETLIFY',
-    codeLink: 'https://github.com/BartlomiejMogielnicki/flashcards-app',
-    link: 'https://flashcards-app.netlify.app/',
+      'React, Redux, NodeJS, Express, MongoDB, Mongoose, ESLint, Netlify, Heroku',
+    codeLink: 'https://github.com/BartlomiejMogielnicki/flashcards-app-v2',
+    link: 'https://flashcards-app-v2.netlify.app/',
   },
   {
     name: 'Project2',
     image: project2,
     alt: 'Project2 screenshot',
-    title: 'Dog shelter website',
-    technologies: 'REACT, SCSS, BEM, NETLIFY',
-    codeLink: 'https://github.com/BartlomiejMogielnicki/website-dog-shelter-v2',
-    link: 'https://dog-shelter-website.netlify.app/',
+    title: 'BLACKJACK CARD GAME',
+    technologies:
+      'Javascript, SCSS, BEM, Webpack, Babel, Deckofcards API, Netlify',
+    codeLink: 'https://github.com/BartlomiejMogielnicki/blackjack-game',
+    link: 'https://bmogielnicki-blackjack-game.netlify.app/',
   },
   {
     name: 'Project3',
     image: project3,
     alt: 'Project3 screenshot',
-    title: 'Blackjack card game',
-    technologies:
-      'JAVASCRIPT, SCSS, BEM, WEBPACK, BABEL, DECKOFCARDS API, NETLIFY',
-    codeLink: 'https://github.com/BartlomiejMogielnicki/blackjack-game',
-    link: 'https://bmogielnicki-blackjack-game.netlify.app/',
+    title: 'DOG SHELTER WEBSITE',
+    technologies: 'React, SCSS, BEM, Netlify',
+    codeLink: 'https://github.com/BartlomiejMogielnicki/website-dog-shelter-v2',
+    link: 'https://dog-shelter-website.netlify.app/',
   },
 ];
 
@@ -66,7 +66,7 @@ const ProjectsPage = () => {
         <strong className="projects__project-info-title">
           {project.title}
         </strong>
-        <p>Used technologies:</p>
+        <p className="projects__project-info-subtitle">Used technologies:</p>
         <p className="projects__project-info-tech">{project.technologies}</p>
       </div>
     </div>

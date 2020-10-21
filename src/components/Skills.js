@@ -4,19 +4,25 @@ import logoHtml from '../images/logos/html_logo.png';
 import logoCss from '../images/logos/css_logo.png';
 import logoJs from '../images/logos/js_logo.png';
 import logoReact from '../images/logos/react_logo.png';
+import logoNodejs from '../images/logos/nodejs_logo.png';
 
 const skillsArr = [
   { name: 'Html', img: logoHtml, alt: 'HTML logo' },
   { name: 'Css', img: logoCss, alt: 'CSS logo' },
   { name: 'Js', img: logoJs, alt: 'JS logo' },
   { name: 'React', img: logoReact, alt: 'REACT logo' },
+  { name: 'Nodejs', img: logoNodejs, alt: 'NODE JS logo' },
 ];
 
 const minorSkillsArr = [
   'Npm',
   'Bootstrap',
   'ESLint',
+  'Postman',
   'REST API',
+  'Mongoose',
+  'MongoDB',
+  'Express',
   'Redux',
   'Git/Github',
   'BEM',
