@@ -6,6 +6,32 @@
     z-index: 1;
   }
 
+  .navigation {
+   &__logo--move {
+    transform: translateY(105%);
+    z-index: 1;
+  }
+
+    &__item {
+      $self:&;
+      &:hover i {
+          color: inherit;
+      }
+
+      &:hover .navigation__item-title {
+          opacity: 0;
+      }
+    }
+      
+    &-link {
+      &:hover {
+        transform: none;
+        font-weight: normal;
+      }
+    }
+  }
+
+
   .main {
     $self: &;
     h2 {
