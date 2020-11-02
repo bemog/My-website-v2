@@ -7,22 +7,22 @@
   }
 
   .navigation {
-   &__logo--move {
-    transform: translateY(105%);
-    z-index: 1;
-  }
+    &__logo--move {
+      transform: translateY(105%);
+      z-index: 1;
+    }
 
     &__item {
-      $self:&;
+      $self: &;
       &:hover i {
-          color: inherit;
+        color: inherit;
       }
 
       &:hover .navigation__item-title {
-          opacity: 0;
+        opacity: 0;
       }
     }
-      
+
     &-link {
       &:hover {
         transform: none;
@@ -30,7 +30,6 @@
       }
     }
   }
-
 
   .main {
     $self: &;
@@ -241,13 +240,13 @@
 }
 
 @include mediaSmallLandscape {
- .main {
+  .main {
     margin-left: 25px;
     min-height: calc(100vh - #{$foot-height} + 2px);
   }
 
   .navigation {
-   &__logo {
+    &__logo {
       margin-top: 5px;
       margin-left: 5px;
       position: fixed;
@@ -273,20 +272,20 @@
     }
 
     &__item {
-      $self:&;
+      $self: &;
 
       & i {
         font-size: 1.4rem;
       }
       &:hover i {
-          color: inherit;
+        color: inherit;
       }
 
       &:hover .navigation__item-title {
-          opacity: 0;
+        opacity: 0;
       }
     }
-      
+
     &-link {
       &:hover {
         transform: none;
@@ -316,15 +315,15 @@
     &__skills-container {
       .about__skills-title {
         margin-top: 40px;
-    }
+      }
 
-    .about__skills-list {
-      .about__skills-item-logo {
-        height: 50px;
+      .about__skills-list {
+        .about__skills-item-logo {
+          height: 50px;
+        }
       }
     }
   }
-}
 
   .projects {
     padding-top: 15px;
@@ -336,8 +335,8 @@
     padding-top: 25px;
 
     &__info {
-        margin-top: 50px;
-        margin-bottom: 25px;
+      margin-top: 50px;
+      margin-bottom: 25px;
     }
   }
 }

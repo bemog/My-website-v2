@@ -16,6 +16,8 @@ const skillsArr = [
 
 const minorSkillsArr = [
   'Npm',
+  'Webpack',
+  'Babel',
   'Bootstrap',
   'ESLint',
   'Postman',
