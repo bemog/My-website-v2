@@ -29,10 +29,10 @@ const projectsArray = [
     name: 'Project3',
     image: project3,
     alt: 'Project3 screenshot',
-    title: 'DOG SHELTER WEBSITE',
-    technologies: 'React, SCSS, BEM, Netlify',
-    codeLink: 'https://github.com/BartlomiejMogielnicki/website-dog-shelter-v2',
-    link: 'https://dog-shelter-website.netlify.app/',
+    title: 'IMAGE FINDER',
+    technologies: 'React, TypeScript, Unsplash API, Netlify',
+    codeLink: 'https://github.com/BartlomiejMogielnicki/image-finder-v2',
+    link: 'https://bmogielnicki-image-finder.netlify.app/',
   },
 ];
 

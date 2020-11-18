@@ -64,6 +64,7 @@
         height: 200px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        border-right: 1px solid rgba(255, 255, 255, 0.4);
       }
 
       &-info {
@@ -78,7 +79,7 @@
         letter-spacing: 1px;
       }
 
-       &-info-subtitle {
+      &-info-subtitle {
         margin-bottom: 8px;
       }
 
