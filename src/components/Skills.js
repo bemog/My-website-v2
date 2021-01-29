@@ -6,6 +6,7 @@ import logoJs from '../images/logos/js_logo.png';
 import logoTs from '../images/logos/ts_logo.png';
 import logoReact from '../images/logos/react_logo.png';
 import logoNodejs from '../images/logos/nodejs_logo.png';
+import logoNext from '../images/logos/next_logo.png';
 
 const skillsArr = [
   { name: 'Html', img: logoHtml, alt: 'HTML logo' },
@@ -13,6 +14,7 @@ const skillsArr = [
   { name: 'Js', img: logoJs, alt: 'JS logo' },
   { name: 'Ts', img: logoTs, alt: 'TS logo' },
   { name: 'React', img: logoReact, alt: 'REACT logo' },
+  { name: 'Nextjs', img: logoNext, alt: 'NextJS logo' },
   { name: 'Nodejs', img: logoNodejs, alt: 'NODE JS logo' },
 ];
 

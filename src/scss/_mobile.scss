@@ -198,11 +198,31 @@
       display: none;
     }
   }
+
+  .about {
+    &__skills-container {
+      .about__skills-list {
+        .about__skills-item-logo {
+          height: 50px;
+        }
+      }
+    }
+  }
 }
 
 @include mediaBig {
   .home {
     margin-left: 40px;
+  }
+
+  .about {
+    &__skills-container {
+      .about__skills-list {
+        .about__skills-item-logo {
+          height: 70px;
+        }
+      }
+    }
   }
 }
 
@@ -213,6 +233,16 @@
 
   .main {
     margin-left: 100px;
+  }
+
+  .about {
+    &__skills-container {
+      .about__skills-list {
+        .about__skills-item-logo {
+          height: 75px;
+        }
+      }
+    }
   }
 
   .home__welcome-text {

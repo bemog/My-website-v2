@@ -11,7 +11,7 @@ const projectsArray = [
     alt: 'Project1 screenshot',
     title: 'FLASHCARDS APPLICATION',
     technologies:
-      'React, Redux, NodeJS, Express, MongoDB, Mongoose, ESLint, Netlify, Heroku',
+      'React, Redux, NodeJS, Express, MongoDB, Mongoose, ESLint, Netlify, Heroku, JWT, Bcrypt',
     codeLink: 'https://github.com/BartlomiejMogielnicki/flashcards-app-v2',
     link: 'https://flashcards-app-v2.netlify.app/',
   },
