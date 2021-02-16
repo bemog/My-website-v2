@@ -9,6 +9,16 @@ const projectsArray = [
     name: 'Project1',
     image: project1,
     alt: 'Project1 screenshot',
+    title: 'ECOMMERCE WEBSITE',
+    technologies:
+      'NextJS, Typescript, SASS, MongoDB, Bcrypt, JWT, Strapi, AWS S3, Vercel',
+    codeLink: 'https://github.com/BartlomiejMogielnicki/ecommerce-website',
+    link: 'https://ecommerce-nextjs-website.vercel.app/',
+  },
+  {
+    name: 'Project2',
+    image: project2,
+    alt: 'Project2 screenshot',
     title: 'FLASHCARDS APPLICATION',
     technologies:
       'React, Redux, NodeJS, Express, MongoDB, Mongoose, ESLint, Netlify, Heroku, JWT, Bcrypt',
@@ -16,23 +26,14 @@ const projectsArray = [
     link: 'https://flashcards-app-v2.netlify.app/',
   },
   {
-    name: 'Project2',
-    image: project2,
-    alt: 'Project2 screenshot',
-    title: 'BLACKJACK CARD GAME',
-    technologies:
-      'Javascript, SCSS, BEM, Webpack, Babel, Deckofcards API, Netlify',
-    codeLink: 'https://github.com/BartlomiejMogielnicki/blackjack-game',
-    link: 'https://bmogielnicki-blackjack-game.netlify.app/',
-  },
-  {
     name: 'Project3',
     image: project3,
     alt: 'Project3 screenshot',
-    title: 'IMAGE FINDER',
-    technologies: 'React, TypeScript, Unsplash API, Netlify',
-    codeLink: 'https://github.com/BartlomiejMogielnicki/image-finder-v2',
-    link: 'https://bmogielnicki-image-finder.netlify.app/',
+    title: 'BLACKJACK CARD GAME',
+    technologies:
+      'Javascript, SASS, BEM, Webpack, Babel, Deckofcards API, Netlify',
+    codeLink: 'https://github.com/BartlomiejMogielnicki/blackjack-game',
+    link: 'https://bmogielnicki-blackjack-game.netlify.app/',
   },
 ];
 
