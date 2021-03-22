@@ -1,45 +1,45 @@
-import React, { Component } from 'react';
-import '../scss/ContactPage.scss';
-import ContactForm from '../components/ContactForm';
+import React, { Component } from "react";
+import "../scss/ContactPage.scss";
+import ContactForm from "../components/ContactForm";
 
 class ContactPage extends Component {
   state = {
-    name: '',
-    email: '',
-    text: '',
-    nameErrorMessage: '',
-    emailErrorMessage: '',
-    textErrorMessage: '',
+    name: "",
+    email: "",
+    text: "",
+    nameErrorMessage: "",
+    emailErrorMessage: "",
+    textErrorMessage: "",
   };
 
   validateForm = () => {
     let name = false;
     let email = false;
     let text = false;
-    let nameErrorMessage = '';
-    let emailErrorMessage = '';
-    let textErrorMessage = '';
+    let nameErrorMessage = "";
+    let emailErrorMessage = "";
+    let textErrorMessage = "";
 
     // Name input verification
-    if (this.state.name === '') {
-      nameErrorMessage = 'Please enter your name';
+    if (this.state.name === "") {
+      nameErrorMessage = "Please enter your name";
     } else {
       name = true;
     }
 
     // E-mail input verification
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (this.state.email === '') {
-      emailErrorMessage = 'Please enter your e-mail address';
+    if (this.state.email === "") {
+      emailErrorMessage = "Please enter your e-mail address";
     } else if (!re.test(String(this.state.email).toLowerCase())) {
-      emailErrorMessage = 'E-mail address is invalid';
+      emailErrorMessage = "E-mail address is invalid";
     } else {
       email = true;
     }
 
     // Text message input verification
-    if (this.state.text === '') {
-      textErrorMessage = 'Please enter your message';
+    if (this.state.text === "") {
+      textErrorMessage = "Please enter your message";
     } else {
       text = true;
     }
@@ -89,7 +89,7 @@ class ContactPage extends Component {
             <i className="contact__info-icon fas fa-phone"></i> 509-190-959
           </span>
           <span>
-            <i className="contact__info-icon fas fa-envelope"></i>{' '}
+            <i className="contact__info-icon fas fa-envelope"></i>{" "}
             b.mogielnicki@gmail.com
           </span>
           <div className="contact__info-social">
@@ -103,7 +103,7 @@ class ContactPage extends Component {
               </span>
             </a>
             <a
-              href="https://github.com/BartlomiejMogielnicki"
+              href="https://github.com/bemog"
               target="_blank"
               rel="noopener noreferrer"
             >
