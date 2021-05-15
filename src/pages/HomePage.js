@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import '../scss/HomePage.scss';
+import React, { Component } from "react";
+import "../scss/HomePage.scss";
 
 class HomePage extends Component {
   state = {
-    titleText: '',
+    titleText: "",
   };
 
   render() {
@@ -18,7 +18,8 @@ class HomePage extends Component {
             former mechanical constructor,
           </span>
           <span className="home__title-text-end">
-            future front-end developer.
+            <span className="home__title-text-end--white">currently </span>
+            front-end developer.
           </span>
         </h1>
       </div>
